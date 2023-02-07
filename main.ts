@@ -1,4 +1,5 @@
-/* let dia: number = 1231231;
+//Função Simples + com parâmetros e retorno String + Switch
+let dia: number = 2;
 switch (dia){
 	case 1:
 		console.log("domingo");
@@ -23,40 +24,33 @@ switch (dia){
 	break;
 	default:
 		console.log("isso nao eh um dia da semana");
-} */
+} 
 
-/*
+//Função Arrow + com parâmetros e retorno String + Switch
 let funcao = (dia: number) : String => {
 	switch (dia){
 		case 1:
 			return "domingo";
-		break;
 		case 2:
 			return "segunda";
-		break;
 		case 3:
 			return "terca";
-		break;
 		case 4:
 			return "quarta";
-		break;
 		case 5:
 			return "quinta";
-		break;
 		case 6:
 			return "sexta";
-		break;
 		case 7:
 			return "sabado";
-		break;
         default:
-		console.log("isso nao eh um dia da semana");
+		return "isso nao eh um dia da semana";
 	}
 }
 
 console.log(funcao(7))
-*/
 
+//Função Arrow + com parâmetros e retorno String + Enum
 enum Dias {"Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"};
 
 let DiaSemana = (dia: number) => { 
