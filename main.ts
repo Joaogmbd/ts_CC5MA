@@ -19,10 +19,10 @@ function diaSemana(dia: number) : String {
 		return "isso nao eh um dia da semana";
 	}
 } 
-console.log("Dia da semana (Arrow + Switch): "+diaSemana(1));
+console.log("Dia da semana (Funcao simples + Switch): "+diaSemana(1));
 
 //Função Arrow + com parâmetros e retorno String + Switch
-let funcao = (dia: number) : String => {
+let diaSemana_2 = (dia: number) : String => {
 	switch (dia){
 		case 1:
 			return "domingo";
@@ -42,7 +42,7 @@ let funcao = (dia: number) : String => {
 		return "isso nao eh um dia da semana";
 	}
 }
-console.log("Dia da semana (Arrow + Switch): "+funcao(7));
+console.log("Dia da semana (Arrow + Switch): "+diaSemana_2(7));
 
 //Função Arrow + com parâmetros e retorno String + Enum
 enum Dias {"Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"};
